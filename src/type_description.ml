@@ -57,7 +57,7 @@ module Types (F : Ctypes.TYPE) = struct
     let p = field t "p" fmpz_poly_t
     let exp = field t "exp" (ptr long)
     let num = field t "num" long
-    (* let alloc = field t "alloc" long *)
+    let alloc = field t "caml_alloc" long
     let () = seal t
   end
 
